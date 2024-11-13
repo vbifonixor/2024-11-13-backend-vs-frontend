@@ -1,0 +1,24 @@
+{
+	"name": "marp-app",
+	"version": "1.0.0",
+	"main": "index.js",
+	"devDependencies": {
+		"run-z": "^2.0.0",
+		"serve": "^14.2.3"
+	},
+	"type": "module",
+	"scripts": {
+		"build": "marp *.md",
+		"watch": "marp -w *.md",
+		"serve": "serve . -l tcp://127.0.0.1:3000",
+		"start": "run-z watch,serve"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@fontsource-variable/source-sans-3": "^5.1.0",
+		"@marp-team/marp-cli": "^3.4.0",
+		"lucide-static": "^0.445.0"
+	}
+}
